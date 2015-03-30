@@ -11,4 +11,8 @@ class CuentaCorriente
 	def acreditar(monto)
 		@saldo += monto
 	end
+
+	def debitar(a_debitar)
+		@saldo -= a_debitar
+	end
 end

@@ -22,4 +22,15 @@ describe 'CuentaCorriente' do
 		
 	end
 
+	describe 'debitar' do
+
+		it 'deberia debitar el saldo con el monto a debitar' do
+			cuenta_corriente = CuentaCorriente.new
+			cuenta_corriente.acreditar 100
+			cuenta_corriente.debitar 10
+			cuenta_corriente.saldo.should eq 90
+		end
+
+	end
+
 end
